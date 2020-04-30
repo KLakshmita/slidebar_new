@@ -2,26 +2,28 @@ import 'package:bloc/bloc.dart';
 import '../pages/myaccountspage.dart';
 import '../pages/myorderspage.dart';
 import '../pages/homepage.dart';
+import '../pages/dashboard.dart';
+import '../pages/dashmain.dart';
 
 
 enum NavigationEvents {
-  HomePageClickedEvent,
+ // HomePageClickedEvent,
   MyAccountClickedEvent,
   MyOrdersClickedEvent,
-
+  DashboardClickedEvent,
 }
 
 abstract class NavigationStates {}
 
 class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
   @override
-  NavigationStates get initialState =>  MyAccountsPage();
+  NavigationStates get initialState =>  MyApp();
 
   @override
   Stream<NavigationStates> mapEventToState(NavigationEvents event) async* {
     switch (event) {
-      case NavigationEvents.HomePageClickedEvent:
-        yield HomePage();
+      case NavigationEvents.DashboardClickedEvent:
+       yield MyApp();
         break;
       case NavigationEvents.MyAccountClickedEvent:
         yield MyAccountsPage();

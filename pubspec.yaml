@@ -43,7 +43,18 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+   - assets/img/bolt.png
+   - assets/img/down_orange.png
+   - assets/img/fish.png
+   - assets/img/illustration.png
+   - assets/img/sausage.png
+   - assets/img/shoe.png
+   - assets/img/up_red.png
+   - assets/img/water.jpg
+   - assets/img/abc1.jpg
+   - assets/img/abc2.png
+   - assets/img/sleep.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
@@ -58,7 +69,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: Bebas
+      fonts:
+        - asset: assets/fonts/bebas_regular.otf
+        - asset: assets/fonts/bebas_bold.otf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins_regular.ttf
+        - asset: assets/fonts/poppins_bold.ttf
+          weight: 700
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

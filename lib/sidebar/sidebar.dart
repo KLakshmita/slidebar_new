@@ -68,8 +68,11 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: const Color(0xFFB3E5FC),
-                 // color: const Color(0xFFFFFF8D),
+                //  color: const Color(0xFFB3E5FC),
+                //  color: const Color(0xFF40C4FF),
+                color: const Color(0xFFFFFFFF),
+                //color: const Color(0xFF00E5FF),
+              //  color: const Color(0xFF212121),
                   child: Column(
                     children: <Widget>[
                       SizedBox(
@@ -108,7 +111,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                         title: "Home",
                         onTap: () {
                           onIconPressed();
-                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.HomePageClickedEvent);
+                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.DashboardClickedEvent);
                         },
                       ),
                       MenuItem(
@@ -162,7 +165,8 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                       width: 35,
                       height: 110,
                      // color: Color(0xFF262AAA),
-                     color: Color(0xFFB3E5FC),
+                  //   color: Color(0xFFB3E5FC),
+                  color: const Color(0xFFFFFFFF),
                       alignment: Alignment.centerLeft,
                       child: AnimatedIcon(
                         progress: _animationController.view,
